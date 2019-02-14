@@ -1,0 +1,19 @@
+[
+ {
+  "access": "teacher",
+  "id": 1000,
+  "lastname": "Berhov",
+  "name": "Sergey",
+  "middlename": "Teacher",
+  "login": "173995",
+  "password": "password123456"
+ },
+ {
+  "access": "student",
+  "id": 1001,
+  "lastname": "Chernov",
+  "name": "Pavel",
+  "middlename": "Vladimirovich",
+  "login": "2",
+  "password": "2"
+ }]
