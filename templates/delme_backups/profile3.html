@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>Acorp</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div class="header-box">
+
+            <div class="navigation">
+                <div class="numbers-box">
+                    <ul>
+                        <li><p>Sales department</p><a href="">+7(999)0000291</a></li>
+                        <li><p>Human Resources Department</p><a href="">+7(999)0000190</a></li>
+                        <li style="padding-right: 100px;"><p>Administrator</p><a href="">+7(999)5170290</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="login">
+        <div id="wrap">
+            <div id="form-box">
+                <p class="form-caption">Personal Area</p>
+                <p class="form-caption">Position:  {{ access_str }}</p>
+                <p class="form-caption">Name:  {{ lastname_str }}  {{ name_str }}  {{ middlename_str }}</p>
+                {% for j in groups_str %}
+                      <div>{{ j.name }}</div>
+                {% endfor %}
+                <div>{{ group_str.name }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer-2">
+    <div class="footer-box">
+        <div class="left-part">
+            Все права защищены &copy 2019 &#171;ITMO university&#187;
+            <p class="copy">
+                Разработка сайта - Горе-практики
+            </p>
+        </div>
+        <div class="right-part">
+            <a href="">Карта сайта</a> | <a href="">F.A.Q.</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
